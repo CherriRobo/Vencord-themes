@@ -244,6 +244,21 @@ body {
   border:0 !important;
 }
 
+:where([class*="repliedMessage"]) {
+  padding-left: 10px !important;
+}
+
+:where([class*="message"]:hover) :where([class*="repliedMessage"]) {
+  padding-left: 10px !important;
+}
+
+:where([class*="repliedMessage"]) {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding-left: 0 !important;
+}
+
 /* Home icon as CyberLife logo. */
 @container body style(--custom-dms-icon: hide) {
   .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg { display: none; }
